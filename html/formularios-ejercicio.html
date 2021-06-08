@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formularios Ejercicios</title>
+</head>
+<body>
+  <h1>CUESTIONARIO DE CINE</h1>
+  <form id="formulario1" name="formulario1" method="POST" action="data.php">
+    <fieldset>
+      <label for="nombre">Nombre:</label><br>
+      <input type="text" name="nombre" id="nombre"><br>
+      <label for="apellido">Apellidos:</label><br>
+      <input type="text" name="apellidos" id="apellidos"><br>
+      <label for="dni">DNI:</label><br>
+      <input type="text" name="dni" id="dni"><br>
+      <label for="edad">Edad:</label><br>
+      <input type="text" name="edad" id="edad" size="2" maxlength="2"><br>
+      <label for="sexo">Sexo:</label><br>
+      <select name="sexo" id="sexo">
+        <option value="H">Hombre</option>
+        <option value="M">Mujer</option>
+        <option value="X">Prefiero no decirlo</option>
+      </select>
+    </fieldset>
+    <fieldset id="mejor_pelicula">
+      <legend>Mejor Película</legend>
+      <input type="radio" name="pelicula" value="11">Centauros Del Desierto<br>
+      <input type="radio" name="pelicula" value="12">El Hombre Que Mató A Liberty<br>
+      <input type="radio" name="pelicula" value="13">Los Vengadores<br>
+    </fieldset>
+    <fieldset id="no_vistas">
+      <legend>Selecciona las películas que hayas visto</legend>
+      <input type="checkbox" name="rio" id="rio">Río Bravo<br>
+      <input type="checkbox" name="joker" id="joker">Joker<br>
+      <input type="checkbox" name="requiem" id="requiem">Requiem For A Dream<br>
+      <input type="checkbox" name="enemy" id="enemy">Enemy<br>
+    </fieldset>
+    <fieldset id="grupo_argumento">
+      <legend>Argumento de tu película favorita</legend>
+      <textarea name="argumento" id="argumento" cols="50" rows="10"></textarea>
+    </fieldset>
+    <br>
+    <input type="reset" value="Borrar Formulario">
+    <input type="submit" value="Enviar">
+  </form>
+  <!-- EJERCICIO FORMULARIO-->
+  <form action="data.php">
+    <label for="nombre">
+      Full name*:<br>
+    </label>
+    <input type="text" name="nombre" id="nombre">
+  </form>
+</body>
+</html>

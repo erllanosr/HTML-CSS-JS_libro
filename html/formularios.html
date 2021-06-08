@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formularios</title>
+</head>
+<body>
+  <h1>Datos personales</h1>
+  <div id="contenedor">
+    <form id="formulario1" name="formulario1" method="POST" action="data.php">
+      Nombre:<br>
+      <input type="text" name="nombre" id="nombre" value="John"><br>
+      Apellidos:<br>
+      <input type="text" name="apellidos" id="apellidos" value="Doe"><br>
+      Profesión:<br>
+      <input type="text" name="profesion" id="profesion" value="lorem" disabled><br>
+      Edad:<br>
+      <input type="text" name="edad" id="edad" size="2" maxlength="2" value="45">
+    </form>
+  </div>
+  <!-- BOTONES-->
+  <div id="botones">
+    <h2>Botones de formulario</h2>
+    <form action="data.php" id="formulario2" name="formulario2" method="POST">
+      Botón tipo <em>button</em>:<br>
+      <input type="button" name="btn_generico" id="btn_generico" value="Aceptar"><br><br>
+      Botón tipo <em>file</em>:<br>
+      <input type="file" name="btn_fichero" id="btn_fichero"><br><br>
+      Botón tipo <em>image</em>:<br>
+      <input type="image" name="btn_image" id="btn_image" src="images/ok.png"><br><br>
+      Botón tipo <em>submit</em>:<br>
+      <input type="submit" name="btn_submit" id="btn_submit" value="Enviar"><br><br>
+    </form>
+  </div>
+
+  <!-- BOTONES DE OPCIÓN-->
+  <div id="btn_opcion">
+    <h2>Botones de opción</h2>
+    <form id="formulario3" action="data.php" method="POST" name="formulario3">
+      <h3>Mejor película</h3>
+      <input type="radio" name="pelicula" value="1">El Padrino<br>
+      <input type="radio" name="pelicula" value="2">El Crepúsculo<br>
+      <input type="radio" name="pelicula" value="3">Avengers<br>
+    </form>
+  </div>
+
+  <!-- CASILLAS DE VERIFICACIÓN-->
+  <div id="checkbox">
+    <h2>Casillas de verificación</h2>
+    <form id="formulario4" name="formulario4" method="POST" action="data.php">
+      <input type="checkbox" name="opcion1" value="1">El Padrino<br>
+      <input type="checkbox" name="opcion2" value="2">Avengers<br>
+      <input type="checkbox" name="opcion3" value="3">Lorem, ipsum dolor.<br>
+      <input type="checkbox" name="opcion4" value="4">Lorem, ipsum dolor.<br>
+    </form>
+  </div>
+
+  <!--LISTAS DESPLEGABLES-->
+  <h2>Listas DESPLEGABLES</h2>
+  <select name="lista" id="lista">
+    <option value="uno">Opción 1</option>
+    <option value="dos">Opción 2</option>
+    <option value="tres">Opción 3</option>
+    <option value="cuatro">Opción 4</option>
+  </select>
+</body>
+</html>
